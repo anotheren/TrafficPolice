@@ -27,7 +27,7 @@ public struct TrafficStatus {
     }
     
     public func update(by data: TrafficData, time interval: Double) -> TrafficStatus {
-        let speed = TrafficSpeed(old: self.data, new: data, interval: interval)
+        let speed = TrafficSpeed(old: self.data, new: data - origin, interval: interval)
         return TrafficStatus(speed: speed, data: data - origin, origin: origin)
     }
 }
