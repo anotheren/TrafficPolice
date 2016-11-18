@@ -44,6 +44,6 @@ public struct TrafficSummary {
 extension TrafficSummary: CustomStringConvertible {
     
     public var description: String {
-        return "wifi:\(wifi)\n, wwan:\(wwan)\n"
+        return "wifi:[\(wifi)],\nwwan:[\(wwan)]"
     }
 }
