@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension Double {
+extension Double {
     
     internal var kb: Double {
         return self / 1024
@@ -22,11 +22,7 @@ internal extension Double {
         return mb / 1024
     }
     
-    func afterPoint(n: Int) -> String {
-        return String(format: "%.\(n)f", self)
-    }
-    
-    internal var unitString: String {
+    public var unitString: String {
         if self.gb > 1 {
             return self.gb.afterPoint(n: 1) + " GB"
         } else if self.mb > 1 {
@@ -34,5 +30,9 @@ internal extension Double {
         } else {
             return self.kb.afterPoint(n: 1) + " KB"
         }
+    }
+    
+    internal func afterPoint(n: Int) -> String {
+        return String(format: "%.\(n)f", self)
     }
 }

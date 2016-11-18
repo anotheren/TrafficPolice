@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension UInt32 {
+extension UInt32 {
     
     internal var double: Double {
         return Double(self)
