@@ -13,6 +13,11 @@ public struct TrafficData {
     public var received: UInt32 // btyes
     public var sent: UInt32 // btyes
     
+    public init(received: UInt32, sent: UInt32) {
+        self.received = received
+        self.sent = sent
+    }
+    
     public static var zero: TrafficData {
         return TrafficData(received: 0, sent: 0)
     }
@@ -33,5 +38,12 @@ public func +(lhs: TrafficData, rhs: TrafficData) -> TrafficData {
     var result = lhs
     result.received += rhs.received
     result.sent += rhs.sent
+    return result
+}
+
+public func -(lhs: TrafficData, rhs: TrafficData) -> TrafficData {
+    var result = lhs
+    result.received -= rhs.received
+    result.sent -= rhs.sent
     return result
 }

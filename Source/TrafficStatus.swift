@@ -12,19 +12,22 @@ public struct TrafficStatus {
     
     public let speed: TrafficSpeed
     public let data: TrafficData
+    public let origin: TrafficData
     
-    private init(speed: TrafficSpeed, data: TrafficData) {
+    private init(speed: TrafficSpeed, data: TrafficData, origin: TrafficData) {
         self.speed = speed
         self.data = data
+        self.origin = origin
     }
     
     public init(origin data: TrafficData) {
         self.speed = .zero
-        self.data = data
+        self.data = .zero
+        self.origin = data
     }
     
     public func update(by data: TrafficData, time interval: Double) -> TrafficStatus {
         let speed = TrafficSpeed(old: self.data, new: data, interval: interval)
-        return TrafficStatus(speed: speed, data: data)
+        return TrafficStatus(speed: speed, data: data - origin, origin: origin)
     }
 }
