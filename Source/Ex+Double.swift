@@ -22,7 +22,17 @@ internal extension Double {
         return mb / 1024
     }
     
-    internal var tb: Double {
-        return gb / 1024
+    func afterPoint(n: Int) -> String {
+        return String(format: "%.\(n)f", self)
+    }
+    
+    internal var unitString: String {
+        if self.gb > 1 {
+            return self.gb.afterPoint(n: 1) + " GB"
+        } else if self.mb > 1 {
+            return self.mb.afterPoint(n: 1) + " MB"
+        } else {
+            return self.kb.afterPoint(n: 1) + " KB"
+        }
     }
 }

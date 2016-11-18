@@ -22,6 +22,13 @@ public struct TrafficData {
     }
 }
 
+extension TrafficData: CustomStringConvertible {
+    
+    public var description: String {
+        return "received: \(received.double.unitString), sent: \(sent.double.unitString)"
+    }
+}
+
 public func +(lhs: TrafficData, rhs: TrafficData) -> TrafficData {
     var result = lhs
     result.received += rhs.received

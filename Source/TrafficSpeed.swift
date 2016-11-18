@@ -28,6 +28,13 @@ public struct TrafficSpeed {
     }
 }
 
+extension TrafficSpeed: CustomStringConvertible {
+    
+    public var description: String {
+        return "download: \(received.unitString)/s, upload: \(sent.unitString)/s"
+    }
+}
+
 public func +(lhs: TrafficSpeed, rhs: TrafficSpeed) -> TrafficSpeed {
     var result = lhs
     result.received += rhs.received
