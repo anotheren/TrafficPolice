@@ -31,3 +31,10 @@ public struct TrafficStatus {
         return TrafficStatus(speed: speed, data: data - origin, origin: origin)
     }
 }
+
+extension TrafficStatus: CustomStringConvertible {
+    
+    public var description: String {
+        return "speed:[\(speed)], data:[\(data)]"
+    }
+}

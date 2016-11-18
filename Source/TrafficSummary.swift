@@ -40,3 +40,10 @@ public struct TrafficSummary {
         return TrafficSummary(wifi: newWIFI, wwan: newWWAN, isOrigin: false)
     }
 }
+
+extension TrafficSummary: CustomStringConvertible {
+    
+    public var description: String {
+        return "wifi:\(wifi)\n, wwan:\(wwan)\n"
+    }
+}
