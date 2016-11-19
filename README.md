@@ -25,6 +25,10 @@ class ViewController: UIViewController, TrafficManagerDelegate {
 
     func post(summary: TrafficSummary) {
         print(summary)
+
+        // wifi:[speed:[download: 0.1 KB/s, upload: 0.0 KB/s], data:[received: 14.9 KB, sent: 13.2 KB]],
+        // wwan:[speed:[download: 0.0 KB/s, upload: 0.0 KB/s], data:[received: 0.0 KB, sent: 0.0 KB]]
+
         // Do whatever you want here!
     }
 }
@@ -46,7 +50,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.4.0
+github "anotheren/TrafficPolice" ~> 0.1.0
 ```
 
 ## License
