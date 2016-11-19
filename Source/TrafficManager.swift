@@ -26,14 +26,13 @@ public class TrafficManager {
         return timer
     }()
     
-    private lazy var counter: TrafficCounter = TrafficCounter()
+    private var counter: TrafficCounter = TrafficCounter()
     
     private var summary: TrafficSummary?
     
     public init() { }
 
     public func resume() {
-        summary = TrafficSummary(origin: counter.usage)
         timer.resume()
     }
     
@@ -56,8 +55,8 @@ public class TrafficManager {
                 return TrafficSummary(origin: counter.usage)
             }
         }()
-        self.delegate?.post(summary: newSummary)
-        self.summary = newSummary
+        delegate?.post(summary: newSummary)
+        summary = newSummary
     }
 }
 

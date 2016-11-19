@@ -17,3 +17,10 @@ public struct TrafficPackage {
         return TrafficPackage(wwan: .zero, wifi: .zero)
     }
 }
+
+extension TrafficPackage: CustomStringConvertible {
+    
+    public var description: String {
+        return "wwan:\(wwan), wifi:\(wifi)"
+    }
+}
