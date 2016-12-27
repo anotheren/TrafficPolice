@@ -31,6 +31,10 @@ public class TrafficManager {
     private var summary: TrafficSummary?
     
     public init() { }
+    
+    public func reset() {
+        summary = nil
+    }
 
     public func resume() {
         timer.resume()
