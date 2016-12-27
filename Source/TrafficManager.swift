@@ -35,7 +35,7 @@ public class TrafficManager {
         summary = nil
     }
 
-    public func resume() {
+    public func start() {
         timer.start()
     }
     
