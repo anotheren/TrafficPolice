@@ -20,7 +20,7 @@ class ViewController: UIViewController, TrafficManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         TrafficManager.shared.delegate = self
-        TrafficManager.shared.resume()
+        TrafficManager.shared.start()
     }
 
     func post(summary: TrafficSummary) {
@@ -50,7 +50,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.1.0
+github "anotheren/TrafficPolice" ~> 0.3.0
 ```
 
 ## License
