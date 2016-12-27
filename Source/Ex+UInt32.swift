@@ -10,7 +10,7 @@ import Foundation
 
 extension UInt32 {
     
-    internal var double: Double {
+    public var double: Double {
         return Double(self)
     }
     
