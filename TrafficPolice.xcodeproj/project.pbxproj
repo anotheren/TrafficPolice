@@ -10,6 +10,7 @@
 		A04343051DDF29D0000C24EB /* Ex+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343041DDF29D0000C24EB /* Ex+Double.swift */; };
 		A04343071DDF3452000C24EB /* TrafficSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343061DDF3452000C24EB /* TrafficSummary.swift */; };
 		A04343091DDF3490000C24EB /* TrafficStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343081DDF3490000C24EB /* TrafficStatus.swift */; };
+		A06D3AB61E12595400CCC284 /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D3AB51E12595400CCC284 /* SwiftTimer.swift */; };
 		A0C578851DDEF12C005E6F85 /* TrafficPolice.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C578831DDEF12C005E6F85 /* TrafficPolice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0C578921DDEF566005E6F85 /* Ex+UInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788C1DDEF566005E6F85 /* Ex+UInt32.swift */; };
 		A0C578931DDEF566005E6F85 /* TrafficCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788D1DDEF566005E6F85 /* TrafficCounter.swift */; };
@@ -23,6 +24,7 @@
 		A04343041DDF29D0000C24EB /* Ex+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ex+Double.swift"; path = "Source/Ex+Double.swift"; sourceTree = "<group>"; };
 		A04343061DDF3452000C24EB /* TrafficSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficSummary.swift; path = Source/TrafficSummary.swift; sourceTree = "<group>"; };
 		A04343081DDF3490000C24EB /* TrafficStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficStatus.swift; path = Source/TrafficStatus.swift; sourceTree = "<group>"; };
+		A06D3AB51E12595400CCC284 /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftTimer.swift; path = Source/SwiftTimer.swift; sourceTree = "<group>"; };
 		A0C578801DDEF12C005E6F85 /* TrafficPolice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrafficPolice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C578831DDEF12C005E6F85 /* TrafficPolice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficPolice.h; sourceTree = "<group>"; };
 		A0C578841DDEF12C005E6F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A04343061DDF3452000C24EB /* TrafficSummary.swift */,
 				A0C5788C1DDEF566005E6F85 /* Ex+UInt32.swift */,
 				A04343041DDF29D0000C24EB /* Ex+Double.swift */,
+				A06D3AB51E12595400CCC284 /* SwiftTimer.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C578931DDEF566005E6F85 /* TrafficCounter.swift in Sources */,
+				A06D3AB61E12595400CCC284 /* SwiftTimer.swift in Sources */,
 				A04343071DDF3452000C24EB /* TrafficSummary.swift in Sources */,
 				A04343091DDF3490000C24EB /* TrafficStatus.swift in Sources */,
 				A0C578961DDEF566005E6F85 /* TrafficPackage.swift in Sources */,

@@ -12,17 +12,14 @@ public class TrafficManager {
     
     public static let shared = TrafficManager()
     
-    public private(set) var interval: Double = 1
+    public private(set) var interval: Double
     
     public weak var delegate: TrafficManagerDelegate?
     
-    private lazy var timer: DispatchSourceTimer = {
-        let timer = DispatchSource.makeTimerSource()
-        timer.scheduleRepeating(deadline: .now() + self.interval, interval: self.interval)
-        timer.setEventHandler(handler: { [weak self] in
-            guard let strongSelf = self else { return }
-            strongSelf.updateSummary()
-        })
+    private lazy var timer: SwiftTimer = {
+        let timer = SwiftTimer.repeaticTimer(interval: .fromSeconds(self.interval)) { timer in
+            self.updateSummary()
+        }
         return timer
     }()
     
@@ -30,25 +27,20 @@ public class TrafficManager {
     
     private var summary: TrafficSummary?
     
-    public init() { }
+    private init(interval: Double = 1.0) {
+        self.interval = interval
+    }
     
     public func reset() {
         summary = nil
     }
 
     public func resume() {
-        timer.resume()
+        timer.start()
     }
     
     public func cancel() {
-        timer.cancel()
-    }
-    
-    public func update(interval: Double) {
-        if timer.isCancelled {
-            self.interval = interval
-            timer.scheduleRepeating(deadline: .now() + interval, interval: interval)
-        }
+        timer.suspend()
     }
     
     private func updateSummary() {
