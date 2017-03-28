@@ -4,8 +4,8 @@ An iOS Network Traffic Counter, a Swift wrapper for ifaddrs
 ## Requirements
 
 * iOS 8.0+
-* Xcode 8.1+
-* Swift 3.0.1+
+* Xcode 8.3+
+* Swift 3.1+
 
 ## Support
 
@@ -50,7 +50,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.3.0
+github "anotheren/TrafficPolice" ~> 0.5.0
 ```
 
 ## License
