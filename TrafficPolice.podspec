@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/anotheren/TrafficPolice.git",
                      :tag => s.version }
   s.source_files = "Source/*.swift"
-  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/SwiftyHash/SystemModule/ifaddrs/iphoneos/' }
+  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/TrafficPolice/SystemModule/ifaddrs/iphoneos/' }
   s.preserve_paths = "SystemModule/ifaddrs/iphoneos/module.modulemap"
 
 end
