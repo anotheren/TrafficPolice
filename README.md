@@ -48,7 +48,7 @@ class ViewController: UIViewController, TrafficManagerDelegate {
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build TrafficPolice 0.7+.
+> CocoaPods 1.1.0+ is required to build TrafficPolice 0.6+.
 
 To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -58,7 +58,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'TrafficPolice', '~> 0.7'
+    pod 'TrafficPolice', '~> 0.6'
 end
 ```
 
@@ -82,7 +82,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.7
+github "anotheren/TrafficPolice" ~> 0.6
 ```
 
 ## License
