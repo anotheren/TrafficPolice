@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ifaddrs
+import Darwin
 
 public struct TrafficCounter {
     

@@ -11,10 +11,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/anotheren/TrafficPolice.git",
                      :tag => s.version }
   s.source_files = "Source/*.swift"
-  s.preserve_paths = "SystemModule/ifaddrs"
-  s.pod_target_xcconfig = {
-    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/TrafficPolice/SystemModule/ifaddrs/iphoneos',
-    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/TrafficPolice/SystemModule/ifaddrs/iphonesimulator',
-  }
 
 end
