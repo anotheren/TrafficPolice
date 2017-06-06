@@ -5,11 +5,9 @@ An iOS Network Traffic Counter, a Swift wrapper for ifaddrs.h
 
 * iOS 8.0+
 
-* Xcode 8.3+
+* Xcode 9 beta
 
-* Swift 3.1+
-
-  **If you use XCode 9 beta, please use Swift4 branch! Now ifaddrs.h has been included by Darwin.**
+* Swift 4.0
 
 ## Support
 
@@ -58,7 +56,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'TrafficPolice', '~> 0.7'
+    pod 'TrafficPolice', '~> 0.7', :git => 'https://github.com/anotheren/TrafficPolice.git', :branch => 'swift4'
 end
 ```
 
@@ -82,7 +80,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.7
+github "anotheren/TrafficPolice" "swift4"
 ```
 
 ## License
