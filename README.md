@@ -1,11 +1,15 @@
 # TrafficPolice
-An iOS Network Traffic Counter, a Swift wrapper for ifaddrs
+An iOS Network Traffic Counter, a Swift wrapper for ifaddrs.h
 
 ## Requirements
 
 * iOS 8.0+
+
 * Xcode 8.3+
+
 * Swift 3.1+
+
+  **If you use XCode 9 beta, please use Swift4 branch! Now ifaddrs.h has been included by Darwin.**
 
 ## Support
 
@@ -36,6 +40,34 @@ class ViewController: UIViewController, TrafficManagerDelegate {
 
 ## Installation
 
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+> CocoaPods 1.1.0+ is required to build TrafficPolice 0.7+.
+
+To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'TrafficPolice', '~> 0.7'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
@@ -50,7 +82,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" ~> 0.5.0
+github "anotheren/TrafficPolice" ~> 0.7
 ```
 
 ## License
