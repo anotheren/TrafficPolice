@@ -34,6 +34,7 @@
 		A0C5788F1DDEF566005E6F85 /* TrafficManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficManager.swift; path = Source/TrafficManager.swift; sourceTree = "<group>"; };
 		A0C578901DDEF566005E6F85 /* TrafficPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficPackage.swift; path = Source/TrafficPackage.swift; sourceTree = "<group>"; };
 		A0C578911DDEF566005E6F85 /* TrafficSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficSpeed.swift; path = Source/TrafficSpeed.swift; sourceTree = "<group>"; };
+		A0D482271F10F8620022AEC0 /* TrafficPolice.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TrafficPolice.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 		A0C578761DDEF12C005E6F85 = {
 			isa = PBXGroup;
 			children = (
+				A0D482271F10F8620022AEC0 /* TrafficPolice.podspec */,
 				A0C5788B1DDEF54D005E6F85 /* Source */,
 				A0C578821DDEF12C005E6F85 /* TrafficPolice */,
 				A0C578811DDEF12C005E6F85 /* Products */,
