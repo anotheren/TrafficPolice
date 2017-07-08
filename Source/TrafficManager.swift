@@ -17,8 +17,8 @@ public class TrafficManager {
     public weak var delegate: TrafficManagerDelegate?
     
     private lazy var timer: SwiftTimer = {
-        let timer = SwiftTimer.repeaticTimer(interval: .fromSeconds(self.interval)) { timer in
-            self.updateSummary()
+        let timer = SwiftTimer.repeaticTimer(interval: .fromSeconds(self.interval)) {[weak self] timer in
+            self?.updateSummary()
         }
         return timer
     }()
