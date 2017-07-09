@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TrafficPolice"
-  s.version      = "0.7.1"
+  s.version      = "0.8.0"
   s.summary      = "A Swifty wrapper for ifaddrs.h"
   s.homepage     = "https://github.com/anotheren/TrafficPolice"
   s.license      = { :type => "MIT" }
