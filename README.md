@@ -4,7 +4,7 @@ An iOS Network Traffic Counter, a Swift wrapper for ifaddrs.h
 ## Requirements
 
 * iOS 8.0+
-* Xcode 9 beta
+* Xcode 9
 * Swift 4.0
 
 ## Support
