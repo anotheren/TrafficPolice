@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TrafficPolice"
-  s.version      = "0.6.0"
+  s.version      = "1.0"
   s.summary      = "A Swifty wrapper for ifaddrs.h"
   s.homepage     = "https://github.com/anotheren/TrafficPolice"
   s.license      = { :type => "MIT" }
@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/anotheren/TrafficPolice.git",
                      :tag => s.version }
   s.source_files = "Source/*.swift"
+  s.dependency 'SwiftTimer', '~> 2.0'
 
 end

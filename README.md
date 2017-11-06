@@ -54,7 +54,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'TrafficPolice', :git => 'https://github.com/anotheren/TrafficPolice.git', :branch => 'swift4'
+
+    pod 'TrafficPolice', '~> 1.0'
 end
 ```
 
@@ -78,7 +79,7 @@ $ brew install carthage
 To integrate TrafficPolice into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "anotheren/TrafficPolice" "swift4"
+github "anotheren/TrafficPolice" ~> 1.0
 ```
 
 ## License

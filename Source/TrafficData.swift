@@ -43,7 +43,15 @@ public func +(lhs: TrafficData, rhs: TrafficData) -> TrafficData {
 
 public func -(lhs: TrafficData, rhs: TrafficData) -> TrafficData {
     var result = lhs
-    result.received -= rhs.received
-    result.sent -= rhs.sent
+    if result.received > rhs.received {
+        result.received -= rhs.received
+    } else {
+        result.received = 0
+    }
+    if result.sent > rhs.sent {
+        result.sent -= rhs.sent
+    } else {
+        result.sent = 0
+    }
     return result
 }
