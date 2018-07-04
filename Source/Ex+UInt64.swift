@@ -1,5 +1,5 @@
 //
-//  Ex+UInt32.swift
+//  Ex+UInt64.swift
 //  TrafficPolice
 //
 //  Created by 刘栋 on 2016/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UInt32 {
+extension UInt64 {
     
     public var double: Double {
         return Double(self)

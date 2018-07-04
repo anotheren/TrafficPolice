@@ -24,12 +24,12 @@ public struct TrafficCounter {
                     if addrs.ifa_addr.pointee.sa_family == UInt8(AF_LINK) {
                         if name.hasPrefix("en") { // Wifi
                             let networkData = unsafeBitCast(addrs.ifa_data, to: UnsafeMutablePointer<if_data>.self)
-                            result.wifi.received += networkData.pointee.ifi_ibytes
-                            result.wifi.sent += networkData.pointee.ifi_obytes
+                            result.wifi.received += UInt64(networkData.pointee.ifi_ibytes)
+                            result.wifi.sent += UInt64(networkData.pointee.ifi_obytes)
                         } else if name.hasPrefix("pdp_ip") { // WWAN
                             let networkData = unsafeBitCast(addrs.ifa_data, to: UnsafeMutablePointer<if_data>.self)
-                            result.wwan.received += networkData.pointee.ifi_ibytes
-                            result.wwan.sent += networkData.pointee.ifi_obytes
+                            result.wwan.received += UInt64(networkData.pointee.ifi_ibytes)
+                            result.wwan.sent += UInt64(networkData.pointee.ifi_obytes)
                         }
                     }
                 }

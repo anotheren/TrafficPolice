@@ -10,10 +10,10 @@ import Foundation
 
 public struct TrafficData {
     
-    public var received: UInt32 // btyes
-    public var sent: UInt32 // btyes
+    public var received: UInt64 // btyes
+    public var sent: UInt64 // btyes
     
-    public init(received: UInt32, sent: UInt32) {
+    public init(received: UInt64, sent: UInt64) {
         self.received = received
         self.sent = sent
     }
@@ -22,7 +22,7 @@ public struct TrafficData {
         return TrafficData(received: 0, sent: 0)
     }
     
-    public var total: UInt32 {
+    public var total: UInt64 {
         return received + sent
     }
 }

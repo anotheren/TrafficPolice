@@ -12,7 +12,7 @@
 		A04343091DDF3490000C24EB /* TrafficStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343081DDF3490000C24EB /* TrafficStatus.swift */; };
 		A0B1A4491F110A3C00677CDB /* SwiftTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B1A4481F110A3C00677CDB /* SwiftTimer.framework */; };
 		A0C578851DDEF12C005E6F85 /* TrafficPolice.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C578831DDEF12C005E6F85 /* TrafficPolice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0C578921DDEF566005E6F85 /* Ex+UInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788C1DDEF566005E6F85 /* Ex+UInt32.swift */; };
+		A0C578921DDEF566005E6F85 /* Ex+UInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788C1DDEF566005E6F85 /* Ex+UInt64.swift */; };
 		A0C578931DDEF566005E6F85 /* TrafficCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788D1DDEF566005E6F85 /* TrafficCounter.swift */; };
 		A0C578941DDEF566005E6F85 /* TrafficData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788E1DDEF566005E6F85 /* TrafficData.swift */; };
 		A0C578951DDEF566005E6F85 /* TrafficManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788F1DDEF566005E6F85 /* TrafficManager.swift */; };
@@ -29,7 +29,7 @@
 		A0C578801DDEF12C005E6F85 /* TrafficPolice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrafficPolice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C578831DDEF12C005E6F85 /* TrafficPolice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficPolice.h; sourceTree = "<group>"; };
 		A0C578841DDEF12C005E6F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0C5788C1DDEF566005E6F85 /* Ex+UInt32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ex+UInt32.swift"; path = "Source/Ex+UInt32.swift"; sourceTree = "<group>"; };
+		A0C5788C1DDEF566005E6F85 /* Ex+UInt64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ex+UInt64.swift"; path = "Source/Ex+UInt64.swift"; sourceTree = "<group>"; };
 		A0C5788D1DDEF566005E6F85 /* TrafficCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficCounter.swift; path = Source/TrafficCounter.swift; sourceTree = "<group>"; };
 		A0C5788E1DDEF566005E6F85 /* TrafficData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficData.swift; path = Source/TrafficData.swift; sourceTree = "<group>"; };
 		A0C5788F1DDEF566005E6F85 /* TrafficManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficManager.swift; path = Source/TrafficManager.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				A0C578911DDEF566005E6F85 /* TrafficSpeed.swift */,
 				A04343081DDF3490000C24EB /* TrafficStatus.swift */,
 				A04343061DDF3452000C24EB /* TrafficSummary.swift */,
-				A0C5788C1DDEF566005E6F85 /* Ex+UInt32.swift */,
+				A0C5788C1DDEF566005E6F85 /* Ex+UInt64.swift */,
 				A04343041DDF29D0000C24EB /* Ex+Double.swift */,
 			);
 			name = Source;
@@ -141,7 +141,7 @@
 		A0C578771DDEF12C005E6F85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = anotheren.com;
 				TargetAttributes = {
 					A0C5787F1DDEF12C005E6F85 = {
@@ -189,7 +189,7 @@
 				A0C578961DDEF566005E6F85 /* TrafficPackage.swift in Sources */,
 				A0C578951DDEF566005E6F85 /* TrafficManager.swift in Sources */,
 				A0C578941DDEF566005E6F85 /* TrafficData.swift in Sources */,
-				A0C578921DDEF566005E6F85 /* Ex+UInt32.swift in Sources */,
+				A0C578921DDEF566005E6F85 /* Ex+UInt64.swift in Sources */,
 				A04343051DDF29D0000C24EB /* Ex+Double.swift in Sources */,
 				A0C578971DDEF566005E6F85 /* TrafficSpeed.swift in Sources */,
 			);
@@ -211,6 +211,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -218,6 +219,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -273,6 +275,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -280,6 +283,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
